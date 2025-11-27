@@ -1,0 +1,14 @@
+spring:
+  kafka:
+    bootstrap-servers: 192.168.29.182:29092
+    streams:
+      application-id: payment-streams-app
+      replication-factor: 3
+      state-dir: /tmp/kafka-streams
+    properties:
+      default.key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+      default.value.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+
+
+chaos:
+  enabled: true
