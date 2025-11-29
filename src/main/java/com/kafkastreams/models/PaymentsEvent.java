@@ -13,3 +13,6 @@ public class PaymentsEvent {
     public int userId;
     public double amountInInr;
 }
+
+
+// "{ "useId" : 1, "amountInInr" : 123.45 }"

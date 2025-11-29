@@ -25,7 +25,7 @@ public class PaymentsStreamConfig {
                 PaymentsEvent payment = mapper.readValue(value, PaymentsEvent.class);
 
                 // 2. Convert INR → USD
-                double usd = payment.amountInInr / 83.0;
+                double usd = payment.getAmountInInr() / 83.0;
 
                 // 3. Create output object
                 ProcessedPayments output = new ProcessedPayments(payment.userId, usd);

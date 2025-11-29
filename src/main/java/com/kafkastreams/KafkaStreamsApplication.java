@@ -1,5 +1,6 @@
 package com.kafkastreams;
 
+import com.kafkastreams.models.PaymentsEvent;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.kafka.annotation.EnableKafkaStreams;
@@ -10,6 +11,7 @@ public class KafkaStreamsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(KafkaStreamsApplication.class, args);
+
 	}
 
 }
